@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE sqlMapConfig
+PUBLIC '-//iBATIS.com//DTD SQL Map Config 2.0//EN'
+'http://www.ibatis.com/dtd/sql-map-config-2.dtd'>
+
+<sqlMapConfig>
+	<settings useStatementNamespaces="true"	/>
+	<sqlMap resource="config/mybatis/map/PasswordResetToken_SqlMap.xml" />
+	<sqlMap resource="config/mybatis/map/persistent_logins_SqlMap.xml" />
+	<sqlMap resource="config/mybatis/map/Privilege_SqlMap.xml" />
+	<sqlMap resource="config/mybatis/map/Role_SqlMap.xml" />
+	<sqlMap resource="config/mybatis/map/roles_privileges_SqlMap.xml" />
+	<sqlMap resource="config/mybatis/map/User_SqlMap.xml" />
+	<sqlMap resource="config/mybatis/map/users_roles_SqlMap.xml" />
+	<sqlMap resource="config/mybatis/map/VerificationToken_SqlMap.xml" />
+</sqlMapConfig>

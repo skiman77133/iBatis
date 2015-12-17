@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry location="/Users/Alex/Documents/Eclipse/Librairy/mysql-connector-java-5.1.36/mysql-connector-java-5.1.36-bin.jar" />
+  <context id="context" targetRuntime="Ibatis2Java5">
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:8889/gumtree" userId="Adminof" password="rootmode1" />
+    
+    <javaModelGenerator targetPackage="com.alex.mybatis.model" targetProject="MyBatis">
+    	<property name="enableSubPackages" value="true" />
+    </javaModelGenerator>
+    
+    <sqlMapGenerator targetPackage="com.alex.mybatis.map" targetProject="MyBatis" >
+    	<property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+    
+    <javaClientGenerator targetPackage="com.alex.mybatis.mapper" targetProject="MyBatis" type="SPRING">
+    	<property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+    
+    <!-- <table tableName="%" >
+    	<property name="useActualColumnNames" value="true"/>
+    	<generatedKey column="id" sqlStatement="MySql" identity="true" />
+    </table> -->
+    
+    <table tableName="PasswordResetToken" >
+    	<property name="useActualColumnNames" value="true"/>
+    	<generatedKey column="id" sqlStatement="MySql" identity="true" />
+    </table>
+    
+    <table tableName="persistent_logins" >
+    	<property name="useActualColumnNames" value="true"/>
+    	<generatedKey column="series" sqlStatement="MySql" identity="true" />
+    </table>
+    
+    <table tableName="Privilege" >
+    	<property name="useActualColumnNames" value="true"/>
+    	<generatedKey column="id" sqlStatement="MySql" identity="true" />
+    </table>
+    
+    <table tableName="Role" >
+    	<property name="useActualColumnNames" value="true"/>
+    	<generatedKey column="id" sqlStatement="MySql" identity="true" />
+    </table>
+    
+    <table tableName="roles_privileges" >
+    	<property name="useActualColumnNames" value="true"/>
+    </table>
+    
+    <table tableName="User" >
+    	<property name="useActualColumnNames" value="true"/>
+    	<generatedKey column="id" sqlStatement="MySql" identity="true" />
+    </table>
+    
+    <table tableName="users_roles" >
+    	<property name="useActualColumnNames" value="true"/>
+    </table>
+    
+    <table tableName="VerificationToken" >
+    	<property name="useActualColumnNames" value="true"/>
+    	<generatedKey column="id" sqlStatement="MySql" identity="true" />
+    </table>
+    
+  </context>
+</generatorConfiguration>
